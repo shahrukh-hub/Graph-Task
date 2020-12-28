@@ -1,1 +1,65 @@
+@author: Shahrukh Khan
+"""
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+ar1=pd.read_csv(r'D:\A.I python\Iris_1.csv')
+ar=pd.get_dummies(ar1)
+print("===================Ravel===========")
+rav=np.ravel(ar1)
+print(rav)
 
+
+print("===================Ravel in Int===========")
+rav=np.ravel(ar)
+print(rav)
+
+print("====================Dimension=======================")
+print("Dimension:",ar.ndim)
+
+print("====================Transpose=======================")
+print("Transpose: ",ar.transpose())
+
+print("====================Minimum=======================")
+print("Minimum: ",ar.min())
+print("=====================Maximum======================")
+print("Maximum: ",ar.max())
+
+print("====================Shape=================")
+print("Shape: ",ar.shape)
+
+print("=============DataType=======================")
+#print("DataType: ",ar.dtype)
+
+print("===============SquareRoot==============")
+print("SquareRoot: ",np.sqrt(ar))
+
+print("==============Standard Daviation================")
+print("Standard Daviation: ",ar.std())
+
+print("=====================Mean======================")
+print("Mean: ",ar.mean())
+
+print("=====================Median======================")
+print("Median: ",ar.median())
+
+print("=====================Mode======================")
+print("Mode: ",ar.mode())
+
+print("===================linspace==================")
+ar=np.linspace(5,6,num=9)
+print(ar)
+
+print("==========Horizontal Axis===========")
+print(ar.sum(axis=0))
+
+# print("===========Vertical Axis===========")
+# print(ar.sum(axis=1))
+
+print("===============Sin-Degree============")
+Sin=np.sin(ar)
+print("Value of Sin on Iris-Data: ",Sin)
+
+print("===============Cos-Degree============")
+Cos=np.cos(ar)
+print("Value of Cos on Iris-Data: ",Cos)
